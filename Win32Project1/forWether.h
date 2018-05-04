@@ -19,4 +19,7 @@ struct Weather
 	double *maxPoint;        
 	int *nOfObserv;        
 };
-
+struct Buf
+{
+	char *buf;
+}
