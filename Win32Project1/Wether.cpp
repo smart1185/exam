@@ -9,7 +9,7 @@
 #include "forWether.h"
 #include "ShowList.h"
 
-FILE * fp, fp1;
+FILE * W;
 
 int main()
 {
@@ -18,19 +18,11 @@ int main()
 	SetConsoleOutputCP(1251);
 	
 	Weather *wet = (Weather*)malloc(sizeof(Weather) * 100);
-	char c;
-	char path[100] = "C:/Users/HP/Desktop/Exam3 (прогноз погоды)/file_we.txt";
-	if ((fp = fopen(path, "r")) != NULL)
-
-	{
-		int i = 0;
-		while ((c=getc(fp))!=EOF)
-		{
-			printf("%s", c);
-		}
-
 	
-	}
-	fclose(fp);
+	W = fopen("1.csv", "r");
+	
+	
+	
+	fclose(W);
 	system("pause");
 }
