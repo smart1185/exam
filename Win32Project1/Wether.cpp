@@ -9,8 +9,7 @@
 #include "forWether.h"
 #include "ShowList.h"
 
-FILE * fp;
-
+FILE * fp, fp1;
 
 int main()
 {
@@ -18,8 +17,20 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	
-	/*UpperShowList();*/
-		
+	Weather *wet = (Weather*)malloc(sizeof(Weather) * 100);
+	char c;
+	char path[100] = "C:/Users/HP/Desktop/Exam3 (прогноз погоды)/file_we.txt";
+	if ((fp = fopen(path, "r")) != NULL)
+
+	{
+		int i = 0;
+		while ((c=getc(fp))!=EOF)
+		{
+			printf("%s", c);
+		}
+
 	
+	}
+	fclose(fp);
 	system("pause");
 }

@@ -1,2 +1,3 @@
 void UpperShowList();
-void periodEnter(Period *period);
+void periodEnter(char *start, char *end);
+void PrintPeriodInfo(char *start, char *end);
